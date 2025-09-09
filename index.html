@@ -1028,25 +1028,7 @@
             }, 1000);
         });
 
-        // Project links functionality
-        document.querySelectorAll('.project-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // For demo purposes, show an alert
-                const linkText = this.textContent;
-                if (linkText.includes('Live Demo')) {
-                    alert('This would open the live demo in a new tab!');
-                } else if (linkText.includes('GitHub')) {
-                    alert('This would open the GitHub repository!');
-                } else if (linkText.includes('Case Study')) {
-                    alert('This would open the detailed case study!');
-                }
-                
-                // In a real implementation, you would use:
-                // window.open(this.href, '_blank');
-            });
-        });
+   
 
         // Email functionality
         document.querySelector('.btn[href^="mailto"]').addEventListener('click', function(e) {
@@ -1140,4 +1122,5 @@
     </script>
 </body>
 </html>
+
 
